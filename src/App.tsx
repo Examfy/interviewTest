@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PhotoGallery from "./gallery";
+
+const photos = [
+  {
+    id: 1,
+    name: "Photo 1",
+    url: "https://via.placeholder.com/150",
+  },
+  {
+    id: 2,
+    name: "Photo 2",
+    url: "https://via.placeholder.com/150",
+  },
+  {
+    id: 3,
+    name: "Photo 3",
+    url: "https://via.placeholder.com/150",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PhotoGallery photos={photos}></PhotoGallery>
     </div>
   );
 }
